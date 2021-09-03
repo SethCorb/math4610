@@ -22,7 +22,7 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
-
+[Link](github.com/sethcorb/math4610/)
 [Link](url) and ![Image](src)
 ```
 
