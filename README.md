@@ -5,7 +5,7 @@ You can use the [editor on GitHub](https://github.com/SethCorb/math4610/edit/mai
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 [Link](https://github.com/SethCorb/math4610/blob/cddc7020c3a94ebb132ec5e5521597ff60c1643f/TaskSheet1)
 ### Markdown
-[Link](https://github.com/SethCorb/math4610/edit/main/TaskSheet1.md)
+[Link](TaskSheet1.md)
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
