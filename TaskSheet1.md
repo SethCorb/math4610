@@ -5,6 +5,7 @@ Task 2: I created the github account and added you as a collaborator.
 Task 3: I will use Gitbash.
 
 Task 4: I put the code in and cloned the thing. Screenshot:
+
 ![image](https://user-images.githubusercontent.com/89805209/133467080-4490b9e4-dfb6-4da9-8935-8277ceb41683.png)
 
 
