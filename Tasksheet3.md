@@ -12,3 +12,7 @@
 
 
 # Task 6
+
+Shared libraries load programs when they start. This is nice because it allows yo uto have software ready to go that you are going to use on a project. It seems to be somewhat similar to packages in something like python, but more about things that you create yourself.
+
+https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
