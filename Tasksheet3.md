@@ -1,6 +1,14 @@
 # Task 1
 
+![image](https://user-images.githubusercontent.com/89805209/134393729-4722a36c-6b5b-4319-b08d-2786643f3a1b.png)
+
 # Task 2
+
+log-log plot of the error and h:
+
+![image](https://user-images.githubusercontent.com/89805209/134272052-8130d164-1e30-4eb2-9a3e-3276004a8f3f.png)
+
+You can tell the error is second order because we have a slope of 2 when things are working intended on the right side. The code begins to fail at about h=10^(-6)
 
 # Task 3
 
@@ -12,3 +20,7 @@
 
 
 # Task 6
+
+Shared libraries load programs when they start. This is nice because it allows yo uto have software ready to go that you are going to use on a project. It seems to be somewhat similar to packages in something like python, but more about things that you create yourself.
+
+https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
