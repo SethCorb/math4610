@@ -4,6 +4,8 @@ Author: Seth Corbridge
 
 Language: Python
 
+Link to file: [link](https://github.com/SethCorb/math4610/blob/7ad85aa04e86ebcd76bbe4d50c73c91f4cce30a7/software/dmaceps.py)
+
 Purpose: This routine will compute the double precision value for the machine epsilon or the number of digits
 in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
 usually will need to be run one time for each computer.
