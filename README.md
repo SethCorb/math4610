@@ -2,6 +2,6 @@
 
 This repository is being used for my computational math class, Math 4610.
 
-[Table of Contents](https://github.com/SethCorb/math4610/blob/614bf06a06d7e3a2a7a8557a3724411363cd35e6/manual/toc.md)
+[Table of Contents](https://github.com/SethCorb/math4610/blob/6a930c980da3bedc6e46fddae896b19bd19cfa0c/manual/toc.md)
 
-[Manual](manual/manual.md)
+[Manual](https://github.com/SethCorb/math4610/blob/6a930c980da3bedc6e46fddae896b19bd19cfa0c/manual/toc.md)
