@@ -12,6 +12,12 @@ You can tell the error is second order because we have a slope of 2 when things 
 
 # Task 3
 
+Part of the output for smaceps (because the whole output is really long):
+
+![image](https://user-images.githubusercontent.com/89805209/134443968-942e678a-0f1c-4390-8fa0-5754aceacdb7.png)
+
+Part of the output for dmaceps:
+
 # Task 4
 
 # Task 5
