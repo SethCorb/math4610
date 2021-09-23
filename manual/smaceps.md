@@ -15,7 +15,7 @@ Output: This routine returns a single precision value for the number of decimal 
 computer being queried.
 
 Code:
-
+```
 c  import numpy as np
 Imports numpy to use the absolute value function
 c  def main():
@@ -35,5 +35,5 @@ Print what step we are on, and what the difference between x and our approximati
 c          eps=eps/2
 Divide epsilon by two to try again.
 c  main()
-
+```
 Last modified 9/2021
