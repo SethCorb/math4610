@@ -4,6 +4,8 @@ Author: Seth Corbridge
 
 Language: Python
 
+Link to file: [link](https://github.com/SethCorb/math4610/blob/46a380677a52ce87d4617387b39acd7e1b416ec4/software/smaceps.py)
+
 Purpose: This routine will compute the single precision value for the machine epsilon or the number of digits
 in the representation of real numbers in single precision. This is a routine for analyzing the behavior of any computer. This
 usually will need to be run one time for each computer.
