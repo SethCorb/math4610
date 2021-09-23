@@ -8,7 +8,7 @@ log-log plot of the error and h:
 
 ![image](https://user-images.githubusercontent.com/89805209/134272052-8130d164-1e30-4eb2-9a3e-3276004a8f3f.png)
 
-You can tell the error is second order because we have a sliope of -2 until things get crazy. The code begins to fail at about h=10^(-6)
+You can tell the error is second order because we have a slope of 2 when things are working intended on the right side. The code begins to fail at about h=10^(-6)
 
 # Task 3
 
