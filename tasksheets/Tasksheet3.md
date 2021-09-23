@@ -23,6 +23,8 @@ Part of the output for dmaceps (because the whole output is really long):
 
 # Task 4
 
+Python doesn't really use shared libraries from what I understand, but I did make these programs into a package that I can import into other code and use. 
+
 # Task 5
 
 ![image](https://user-images.githubusercontent.com/89805209/133897095-4f04fdc9-f87e-4245-853b-df8998ff8327.png)
@@ -30,6 +32,8 @@ Part of the output for dmaceps (because the whole output is really long):
 
 # Task 6
 
-Shared libraries load programs when they start. This is nice because it allows yo uto have software ready to go that you are going to use on a project. It seems to be somewhat similar to packages in something like python, but more about things that you create yourself.
+Shared libraries load programs when they start. This is nice because it allows you to have software ready to go that you are going to use on a project. An upside seems to be that using one saves space on your system. A downside would be the installation of the library.
+
+http://boron.physics.metu.edu.tr/ozdogan/SystemsProgramming/week2/node15.html
 
 https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html
