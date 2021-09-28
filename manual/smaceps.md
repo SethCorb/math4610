@@ -18,24 +18,14 @@ computer being queried.
 
 Code:
 ```
-c  import numpy as np
-Imports numpy to use the absolute value function
-c  def main():
-c      x=1
-c      eps=.5
-Set x=1 and our initial epsilon as .5
-c      for i in range(100):
-c          xapp = x+eps
-c          err = np.abs(x-xapp)
-Finds the difference between x and our approximation
-c          if err==0:
-c              print("done")
-c              break
-If the computer finds x to be the same as our approximation, it ends the program.
-c          print("i:",i,"error:",err)
-Print what step we are on, and what the difference between x and our approximation is.
-c          eps=eps/2
-Divide epsilon by two to try again.
-c  main()
+import numpy as np
+c import numpy
+def main():
+    macheps = np.finfo(np.float32).eps
+c find the single precision
+    print(macheps)
+c print the precision
+main()
+c call main.
 ```
 Last modified 9/2021
