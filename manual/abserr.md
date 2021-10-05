@@ -4,7 +4,7 @@ Author: Seth Corbridge
 
 Language: Python
 
-Link to file: [link](software/abserr.py)
+Link to file: [link](https://github.com/SethCorb/math4610/blob/1b52c29b7a9fb722b2308db3c0a220e3e9fb6544/software/abserr.py)
 
 Purpose: This routine will give you the absolute error given an a number and an approximation.
 
