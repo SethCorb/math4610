@@ -15,7 +15,18 @@ Relative Error:
 
 # Task 3
 
+![image](https://user-images.githubusercontent.com/89805209/136119740-324ccdef-69d3-4740-b418-32587f0995c2.png)
+
+
 # Task 4
+
+![image](https://user-images.githubusercontent.com/89805209/136119767-582ac1b0-299e-42c4-a5e7-e9f8a2cea749.png)
+
+Output:
+
+![image](https://user-images.githubusercontent.com/89805209/136119805-2cafdac0-d5fa-4707-a86b-599942803382.png)
+
+I chose epsilon as -.01 to make our iteration converge.
 
 # Task 5
 
