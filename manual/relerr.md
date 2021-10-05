@@ -4,7 +4,7 @@ Author: Seth Corbridge
 
 Language: Python
 
-Link to file: [link]()
+Link to file: [link](https://github.com/SethCorb/math4610/blob/64ffb6b3c6f621820d0c9aaa6d97f79fa1e7f85e/software/relerr.py)
 
 Purpose: This routine will give you the relative error given an a number and an approximation.
 
