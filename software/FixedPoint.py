@@ -1,6 +1,4 @@
 import numpy as  np
-#i = input("fn")
-#x * np.exp( 3 * x ** 2)- 7 * x
 def g(x):
     return eval("x * np.exp( 3 * x ** 2)- 7 * x", {'x': x, 'np': np})
 
