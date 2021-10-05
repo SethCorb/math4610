@@ -1,4 +1,4 @@
-This is my manual
+This is my manual table of contents
 
 [abserr](https://github.com/SethCorb/math4610/blob/4b4f26a832e974be2926a7854eeeaa3d22d314fc/manual/abserr.md)
 
