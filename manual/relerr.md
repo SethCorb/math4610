@@ -14,6 +14,11 @@ Output: This routine returns you the relative error.
 
 Code:
 ```
-
+import numpy as np
+c import numpy
+def main(x,xapp):
+    return np.abs(x-xapp)/np.abs(x)
+c calculate the absolute error and return it
+main()
 ```
 Last modified 9/2021
