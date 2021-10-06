@@ -1,12 +1,14 @@
 import numpy as  np
+import math
 def f(x):
     return eval("x * np.exp( 3 * x ** 2)- 7 * x", {'x': x, 'np': np})
 
-def bisection(a,b,tol,maxiter):
+def bisection(a,b,tol):
     fa = f(a)
-    error = 10 * tol
     iter = 0
-    while error > tol and iter < maxiter:
+    error = np.abs(b - a)
+    k = math.ceil((math.log(error / tol) / math.log(2)) +1)
+    for i in range(k):
         c = (a+b)/2
         fc = f(c)
         if fa * fc < 0:
@@ -14,9 +16,9 @@ def bisection(a,b,tol,maxiter):
         else:
             a = c
         iter = iter + 1
-        error = np.abs(b-a)
+
 
 
     return c
 
-print(bisection(-.5,.5,.01,100))
+print(bisection(.3,.9,.001))
