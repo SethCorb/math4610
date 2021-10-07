@@ -30,6 +30,13 @@ I chose epsilon as -.01 to make our iteration converge.
 
 # Task 5
 
+![image](https://user-images.githubusercontent.com/89805209/136460772-fe4a4f59-c01a-4b06-9e92-deea45a9d018.png)
+
+Output:
+
+![image](https://user-images.githubusercontent.com/89805209/136460900-a5accbd4-2d26-4acf-8f1d-b4c3e0ade912.png)
+
+
 # Task 6
 
 From what I have read, I learned that root finding is used for many optimization problems, because finding the max or min of a function can be done by finding a root of its derivative.
