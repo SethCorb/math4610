@@ -1,5 +1,8 @@
 import numpy as np
+from matplotlib import pyplot as plt
 def newton(x0, tol, maxiter):
+    errlist = []
+    iterlist = []
     expression = input('Enter expression:\n')
     expp = input('Enter Derivative of expression:\n')
     x = x0
@@ -10,14 +13,25 @@ def newton(x0, tol, maxiter):
     while error > tol and iter < maxiter:
         x1 = x0 - f0/fp0
         error = np.abs(x1-x0)
+        errlist.append(error)
+        iterlist.append(iter)
         iter = iter + 1
         x0 = x1
         x=x0
         f0 = eval(expression)
         fp0 = eval(expp)
+# plot stuff
+    loglist = []
+    for i in errlist:
+        loglist.append(np.log(i))
+    plt.plot(iterlist,loglist)
+    plt.show()
+
+# End plot stuff
+
     return x1
 
-print(newton(1.5,.1,1000))
+print(newton(1.5,.01,1000))
 
 
 
