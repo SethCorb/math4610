@@ -1,5 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
+
 def newton(x0, tol, maxiter):
     errlist = []
     iterlist = []
@@ -21,17 +22,26 @@ def newton(x0, tol, maxiter):
         f0 = eval(expression)
         fp0 = eval(expp)
 # plot stuff
-    loglist = []
+#    loglist = []
+#    logiter= []
+#    for i in errlist:
+#        loglist.append(np.log(i))
+#    for i in iterlist:
+#        logiter.append(np.log(i))
+#    print(loglist,logiter)
+#    plt.plot(logiter,loglist)
+#    plt.show()
+    newerr = [1]
     for i in errlist:
-        loglist.append(np.log(i))
-    plt.plot(iterlist,loglist)
+        newerr.append(i)
+    plt.loglog(iterlist, errlist)
     plt.show()
 
 # End plot stuff
 
     return x1
 
-print(newton(1.5,.01,1000))
+print(newton(.05,.01,1000))
 
 
 

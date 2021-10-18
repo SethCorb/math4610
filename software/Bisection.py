@@ -21,4 +21,4 @@ def bisection(a,b,tol):
 
     return c
 
-print(bisection(.3,.9,.001))
+print(bisection(-.5,.5,.001))
