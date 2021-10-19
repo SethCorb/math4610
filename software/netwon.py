@@ -21,7 +21,6 @@ def newton(x0, tol, maxiter):
         x=x0
         f0 = eval(expression)
         fp0 = eval(expp)
-
     plt.loglog(iterlist, errlist)
     plt.show()
 
