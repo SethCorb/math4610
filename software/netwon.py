@@ -21,19 +21,7 @@ def newton(x0, tol, maxiter):
         x=x0
         f0 = eval(expression)
         fp0 = eval(expp)
-# plot stuff
-#    loglist = []
-#    logiter= []
-#    for i in errlist:
-#        loglist.append(np.log(i))
-#    for i in iterlist:
-#        logiter.append(np.log(i))
-#    print(loglist,logiter)
-#    plt.plot(logiter,loglist)
-#    plt.show()
-    newerr = [1]
-    for i in errlist:
-        newerr.append(i)
+
     plt.loglog(iterlist, errlist)
     plt.show()
 

@@ -25,12 +25,15 @@ def secant(x0, x1, tol, maxiter):
 
 # plot stuff
     loglist = []
+    logiter =[]
     for i in errlist:
         loglist.append(np.log(i))
-    plt.plot(iterlist,loglist)
+    for i in iterlist:
+        logiter.append(i)
+    plt.plot(logiter,loglist)
     plt.show()
 # end plot stuff
 
     return x2
 
-print(secant(1,2,.001,1000))
+print(secant(1,3,.001,1000))
