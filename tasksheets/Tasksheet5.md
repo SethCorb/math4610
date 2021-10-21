@@ -83,3 +83,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/89805209/138352803-71048b92-6848-4d54-bf01-f11d45c49e20.png)
 
 # Task 6
+
+An advantage of the Bisection method is that it is fairly robust. It is harder to break than the others, but it does gain accuracy slower, which can be a downside. Newton's method and Secant method both converge more quickly than the bisection method. Newton's method is the fastest, but requires computation of a derivative, which can be difficult. Secant method does not require a derivative, which is nice.
+
+[https://en.wikipedia.org/wiki/Root-finding_algorithms#Newton's_method_(and_similar_derivative-based_methods)](https://en.wikipedia.org/wiki/Root-finding_algorithms#Newton's_method_(and_similar_derivative-based_methods))
