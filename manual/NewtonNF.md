@@ -1,5 +1,3 @@
-Need Example.
-
 Routine Name: Newton
 
 Author: Seth Corbridge
