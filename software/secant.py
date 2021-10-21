@@ -1,7 +1,8 @@
 import numpy as np
 from matplotlib import pyplot as plt
 def secant(x0, x1, tol, maxiter):
-    expression = input('Enter expression:\n')
+    expression = "x*np.exp(3*x**2)-7*x"
+    #expression = input('Enter expression:\n')
     errlist = []
     iterlist=[]
     x = x0
@@ -33,4 +34,4 @@ def secant(x0, x1, tol, maxiter):
 
     return x2
 
-print(secant(1,2,.001,1000))
+print(secant(0.7,1,.001,1000))
