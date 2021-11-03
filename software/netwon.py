@@ -1,11 +1,12 @@
 import numpy as np
 from matplotlib import pyplot as plt
-
 def newton(x0, tol, maxiter):
     errlist = []
     iterlist = []
-    expression = input('Enter expression:\n')
-    expp = input('Enter Derivative of expression:\n')
+    #expression = input('Enter expression:\n')
+    expression = "x*np.exp(3*x**2)-7*x"
+    #expp = input('Enter Derivative of expression:\n')
+    expp = "x*np.exp(3*x**2)*6*x+np.exp(3*x**2)-7"
     x = x0
     f0=eval(expression)
     fp0 = eval(expp)
@@ -23,12 +24,10 @@ def newton(x0, tol, maxiter):
         fp0 = eval(expp)
     plt.loglog(iterlist, errlist)
     plt.show()
-
 # End plot stuff
-
     return x1
 
-print(newton(.05,.01,1000))
+print(newton(.9,.01,1000))
 
 
 

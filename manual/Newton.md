@@ -1,5 +1,3 @@
-Need Example.
-
 Routine Name: Newton
 
 Author: Seth Corbridge
@@ -55,10 +53,8 @@ c plot the logs of x and y to see convergence.
     return x1
 
 print(newton(.05,.01,1000))
-
-
-
-
 ```
 Last modified 9/2021
 
+Output from example:
+![image](https://user-images.githubusercontent.com/89805209/138352644-442f50e1-48d6-4c0e-bb6b-8ee55ce26d11.png)

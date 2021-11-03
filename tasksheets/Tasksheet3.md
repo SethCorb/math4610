@@ -23,12 +23,13 @@ Part of the output for dmaceps (because the whole output is really long):
 
 # Task 4
 
-Python doesn't really use shared libraries from what I understand, but I did make these programs into a package that I can import into other code and use. 
+![image](https://user-images.githubusercontent.com/89805209/133897095-4f04fdc9-f87e-4245-853b-df8998ff8327.png)
+
+[link to my manual toc](https://github.com/SethCorb/math4610/blob/d0d3bb89380b17086756f127e5f3437c49fe5c66/manual/toc.md)
 
 # Task 5
 
-![image](https://user-images.githubusercontent.com/89805209/133897095-4f04fdc9-f87e-4245-853b-df8998ff8327.png)
-
+I created the shared library as requested. I created the files needed, such as the \_\_init\_\_.py. [link to init file](https://github.com/SethCorb/math4610/blob/d0d3bb89380b17086756f127e5f3437c49fe5c66/software/__init__.py). The rest of the files are in the folder below the file. I also used vim to create the init file.
 
 # Task 6
 

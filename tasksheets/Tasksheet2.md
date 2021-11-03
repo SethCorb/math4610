@@ -7,11 +7,11 @@ I ran this code by pressing the "run" button. It compiled automatically.
 
 ## Task 2
 
-I added the description as requested.
+I created the description as requested. [link](https://github.com/SethCorb/math4610/blob/0199729524366c4944f26324a422e30d0deff518/README.md)
 
 ## Task 3
 
-I created the table of contents file as requested.
+I created the table of contents file as requested.[link](https://github.com/SethCorb/math4610/blob/0199729524366c4944f26324a422e30d0deff518/manual/toc.md)
 
 ## Task 4
 
