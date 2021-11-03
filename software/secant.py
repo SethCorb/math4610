@@ -33,4 +33,4 @@ def secant(x0, x1, tol, maxiter):
 
     return x2
 
-print(secant(1,2,.001,1000))
+print(secant(0,.5,.001,1000))

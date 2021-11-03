@@ -1,6 +1,6 @@
 import numpy as  np
 def g(x):
-    return eval("x * np.exp( 3 * x ** 2)- 7 * x", {'x': x, 'np': np})
+    return eval("np.exp(-x**2)*np.sin(4*x**2-1)+.051", {'x': x, 'np': np})
 
 def FixedPoint(x0,tol,maxiter):
     eps= -.01
@@ -12,4 +12,7 @@ def FixedPoint(x0,tol,maxiter):
         x0=x1
         iter = iter + 1
     return(x1)
-print(FixedPoint(.5,.00001,10000))
+print(FixedPoint(.3,.00001,10000))
+
+
+# 8*x*np.exp(-x**2)*np.cos(4*x**2-1)-2*x*np.exp(-x**2)*np.sin(4*x**2-1)

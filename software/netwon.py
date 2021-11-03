@@ -4,9 +4,9 @@ def newton(x0, tol, maxiter):
     errlist = []
     iterlist = []
     #expression = input('Enter expression:\n')
-    expression = "x*np.exp(3*x**2)-7*x"
+    expression = "np.exp(-x**2)*np.sin(4*x**2-1)+.051"
     #expp = input('Enter Derivative of expression:\n')
-    expp = "x*np.exp(3*x**2)*6*x+np.exp(3*x**2)-7"
+    expp = "8*x*np.exp(-x**2)*np.cos(4*x**2-1)-2*x*np.exp(-x**2)*np.sin(4*x**2-1)"
     x = x0
     f0=eval(expression)
     fp0 = eval(expp)
@@ -22,12 +22,12 @@ def newton(x0, tol, maxiter):
         x=x0
         f0 = eval(expression)
         fp0 = eval(expp)
-    plt.loglog(iterlist, errlist)
-    plt.show()
+    #plt.loglog(iterlist, errlist)
+    #plt.show()
 # End plot stuff
     return x1
 
-print(newton(.9,.01,1000))
+print(newton(2,.0001,1000))
 
 
 

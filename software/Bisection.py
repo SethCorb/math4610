@@ -1,7 +1,7 @@
 import numpy as  np
 import math
 def f(x):
-    return eval("x * np.exp( 3 * x ** 2)- 7 * x", {'x': x, 'np': np})
+    return eval("np.exp(-x**2)*np.sin(4*x**2-1)+.051", {'x': x, 'np': np})
 
 def bisection(a,b,tol):
     fa = f(a)
@@ -21,4 +21,4 @@ def bisection(a,b,tol):
 
     return c
 
-print(bisection(-.5,.5,.001))
+print(bisection(0,1,.001))
