@@ -16,6 +16,24 @@ def hybrid(a, b, tol, maxiter):
     iter = 0
     err = 5 * tol
     error = 1000
+    zerolist = []
+    increment = .01
+    lowbound=a
+    x=lowbound
+    fl=eval(expression)
+# Finding Bunches of zeroes.
+    while True:
+        upbound=lowbound+increment
+        x=upbound
+        fu=eval(expression)
+        if fl*fu<0:
+            zerolist.append(lowbound)
+        lowbound+=increment
+        if lowbound > b:
+            break
+        fl = fu
+    print(zerolist)
+#End of Bunches of zeroes
     while err > tol and iter < maxiter:
         x1 = x0 - f0 / fp0
         errnewt = np.abs(x1 - x0)
