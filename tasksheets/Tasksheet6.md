@@ -50,5 +50,13 @@ I actually got the correct zero. However, I did modify the code so that when I n
 
 # Task 5
 
+Output:
+
+![image](https://user-images.githubusercontent.com/89805209/140406582-2fad5669-bdf1-4844-8cbe-59512ac9c363.png)
+
+![image](https://user-images.githubusercontent.com/89805209/140406605-6fc3c5d7-32cf-4cee-95f4-e4ad06dd8dfa.png)
+
+[Link to Code](https://github.com/SethCorb/math4610/blob/e65edf507ee24fc65809d8a87be74c33a8c1ea49/software/Bunch%20of%20Zeroes.py)
+
 # Task 6
 
