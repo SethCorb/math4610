@@ -4,19 +4,26 @@ Output for bisection method:
 
 ![image](https://user-images.githubusercontent.com/89805209/140004388-80c5c0e0-8def-46e0-b8ce-c16553127b7d.png)
 
+[link to code](https://github.com/SethCorb/math4610/blob/2149fb53709fdae5e3d46aa2625f7cb32a8adfb1/software/Bisection.py)
+
 
 Output for secant method:
 
 ![image](https://user-images.githubusercontent.com/89805209/140004339-4dd07157-8fcf-49cd-878a-8cf5c79b5556.png)
 
+[link to code](https://github.com/SethCorb/math4610/blob/2149fb53709fdae5e3d46aa2625f7cb32a8adfb1/software/secant.py)
+
 Output for fixed point method:
 
 ![image](https://user-images.githubusercontent.com/89805209/140004421-1704da56-2c0a-40d1-b505-962d56d2cbd6.png)
+
+[link to code](https://github.com/SethCorb/math4610/blob/2149fb53709fdae5e3d46aa2625f7cb32a8adfb1/software/FixedPoint.py)
 
 Output for Newton's method:
 
 ![image](https://user-images.githubusercontent.com/89805209/140004629-c6c89b86-f59f-4a54-8d53-3dd0806aa585.png)
 
+[link to code](https://github.com/SethCorb/math4610/blob/2149fb53709fdae5e3d46aa2625f7cb32a8adfb1/software/netwon.py)
 
 
 # Task 2
@@ -44,11 +51,19 @@ Output for this:
 
 ![image](https://user-images.githubusercontent.com/89805209/140006204-9ba94c91-2030-44d4-8a4c-27d4ac7ae47f.png)
 
-I actually got the correct zero. However, I did modify the code so that when I need a specific zero, then I can get it.
+Code: [link](https://github.com/SethCorb/math4610/blob/2149fb53709fdae5e3d46aa2625f7cb32a8adfb1/software/hybrid.py)
 
 # Task 4
 
 # Task 5
+
+Output:
+
+![image](https://user-images.githubusercontent.com/89805209/140406582-2fad5669-bdf1-4844-8cbe-59512ac9c363.png)
+
+![image](https://user-images.githubusercontent.com/89805209/140406605-6fc3c5d7-32cf-4cee-95f4-e4ad06dd8dfa.png)
+
+[Link to Code](https://github.com/SethCorb/math4610/blob/e65edf507ee24fc65809d8a87be74c33a8c1ea49/software/Bunch%20of%20Zeroes.py)
 
 # Task 6
 
