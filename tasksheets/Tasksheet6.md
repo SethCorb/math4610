@@ -51,7 +51,7 @@ Output for this:
 
 ![image](https://user-images.githubusercontent.com/89805209/140006204-9ba94c91-2030-44d4-8a4c-27d4ac7ae47f.png)
 
-Code: https://github.com/SethCorb/math4610/blob/2149fb53709fdae5e3d46aa2625f7cb32a8adfb1/software/hybrid.py
+Code: [link](https://github.com/SethCorb/math4610/blob/2149fb53709fdae5e3d46aa2625f7cb32a8adfb1/software/hybrid.py)
 
 # Task 4
 
