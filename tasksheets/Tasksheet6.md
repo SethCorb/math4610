@@ -55,6 +55,13 @@ Code: [link](https://github.com/SethCorb/math4610/blob/2149fb53709fdae5e3d46aa26
 
 # Task 4
 
+Output:
+
+![image](https://user-images.githubusercontent.com/89805209/140840136-568b3585-a26d-4359-970f-b088ab236959.png)
+
+[link](https://github.com/SethCorb/math4610/blob/bc91dba9a6f6ed19e8a084513ac3ad9ef8ea4a6f/software/HybridSecant.py)
+
+
 # Task 5
 
 Output:
