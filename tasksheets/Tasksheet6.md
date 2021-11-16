@@ -55,6 +55,13 @@ Code: [link](https://github.com/SethCorb/math4610/blob/2149fb53709fdae5e3d46aa26
 
 # Task 4
 
+Output:
+
+![image](https://user-images.githubusercontent.com/89805209/140840136-568b3585-a26d-4359-970f-b088ab236959.png)
+
+[link](https://github.com/SethCorb/math4610/blob/bc91dba9a6f6ed19e8a084513ac3ad9ef8ea4a6f/software/HybridSecant.py)
+
+
 # Task 5
 
 Output:
@@ -67,3 +74,6 @@ Output:
 
 # Task 6
 
+There are many methods to find multiple roots. The most common one is to split up an interval into a bunch of sub intervals, and search for zeroes on each of those subintervals. The Durand-Kerner method is another method. The downside with this one is that you need a polynomial to find the roots of. No other function will work. This is very similar to teh Aberth method. Although it can take a lot of time, the most robust method seems to be to chop your interval into smaller intervals
+
+[link](https://en.wikipedia.org/wiki/Root-finding_algorithms)

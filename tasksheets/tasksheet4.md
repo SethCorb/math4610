@@ -13,9 +13,18 @@ Relative Error:
 
 ![image](https://user-images.githubusercontent.com/89805209/136117133-e8296ee9-9c1e-470f-a821-441121dc9751.png)
 
+Output of the two functions shown:
+
+![image](https://user-images.githubusercontent.com/89805209/140862970-c9c02ff5-57a7-46be-ad5c-f76e86bb0c98.png)
+
+
 # Task 3
 
 ![image](https://user-images.githubusercontent.com/89805209/136119740-324ccdef-69d3-4740-b418-32587f0995c2.png)
+
+Output:
+
+![image](https://user-images.githubusercontent.com/89805209/140863027-a4d6356a-2f5c-49d8-91fb-e45ae0f081b2.png)
 
 
 # Task 4
