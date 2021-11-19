@@ -29,3 +29,7 @@ Output:
 Output:
 
 # Task 6
+
+To be able to solve a linear system of equations, we need each system to be independent. This means the matrix representation must be non-singular. Otherwise you will have redundant information that causes you to have more unknowns than equations. That is the basic condition for solvability..
+
+[link to source](https://en.wikipedia.org/wiki/System_of_linear_equations#Properties)
