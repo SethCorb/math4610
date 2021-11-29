@@ -42,13 +42,13 @@ def backsub(A):
         x[i]=sum/A[i][i]
     return x
 
-def RandSqMat(n,seed):
+def RandSqMat(n,seed=10):
     A=[]
     random.seed(seed)
     for i in range(n):
         A.append([])
         for j in range(n):
-            A[i].append(random.randint(-10,10))
+            A[i].append(random.randint(1,10))
     return(A)
 
 def RandLowMat(n,seed=10):
@@ -58,7 +58,7 @@ def RandLowMat(n,seed=10):
         A.append([])
         for j in range(n):
             if i >= j:
-                A[i].append(random.randint(-10,10))
+                A[i].append(random.randint(1,10))
             else:
                 A[i].append(0)
     return(A)
@@ -70,7 +70,7 @@ def RandUpMat(n,seed=10):
         A.append([])
         for j in range(n):
             if i <= j:
-                A[i].append(random.randint(-10,10))
+                A[i].append(random.randint(1,10))
             else:
                 A[i].append(0)
     return(A)
@@ -89,12 +89,12 @@ def RandDiagMat(n,seed=10):
 
 def Gauss(A,b):
     n=len(b)
-    print(A)
     for k in range(n):
         for i in range(k+1,n):
             factor=A[i][k]/A[k][k]
             for j in range(n):
                 A[i][j]=A[i][j]-factor*A[k][j]
     return(A)
+
 
 print(Gauss(RandSqMat(3,4),[1,1,1]))
