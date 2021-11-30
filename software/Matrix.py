@@ -15,7 +15,7 @@ def defMat(n):
                 A[j].append(0)
     return A
 
-def MatTranspose(A):
+def matTranspose(A):
     n = len(A)
     B = []
     for i in A:
@@ -42,7 +42,7 @@ def backsub(A):
         x[i]=sum/A[i][i]
     return x
 
-def RandSqMat(n,seed=10):
+def randSqMat(n,seed=10):
     A=[]
     random.seed(seed)
     for i in range(n):
@@ -51,7 +51,7 @@ def RandSqMat(n,seed=10):
             A[i].append(random.randint(1,10))
     return(A)
 
-def RandLowMat(n,seed=10):
+def randLowMat(n,seed=10):
     A=[]
     random.seed(seed)
     for i in range(n):
@@ -63,7 +63,7 @@ def RandLowMat(n,seed=10):
                 A[i].append(0)
     return(A)
 
-def RandUpMat(n,seed=10):
+def randUpMat(n,seed=10):
     A=[]
     random.seed(seed)
     for i in range(n):
@@ -75,7 +75,7 @@ def RandUpMat(n,seed=10):
                 A[i].append(0)
     return(A)
 
-def RandDiagMat(n,seed=10):
+def randDiagMat(n,seed=10):
     A=[]
     random.seed(seed)
     for i in range(n):
@@ -87,14 +87,24 @@ def RandDiagMat(n,seed=10):
                 A[i].append(0)
     return(A)
 
-def Gauss(A,b):
+def gauss(A,b):
     n=len(b)
     for k in range(n):
         for i in range(k+1,n):
             factor=A[i][k]/A[k][k]
             for j in range(n):
                 A[i][j]=A[i][j]-factor*A[k][j]
-    return(A)
+            b[i] -= factor*b[k]
+    x = [1 for i in range(n)]
+    for i in range(n - 1, -1, -1):
+        factor = b[i]
+        for j in range(0, n):
+            factor -= A[i][j] * x[j] if i != j else 0
+        x[i] = factor / A[i][i]
+    '''x = [0 for i in range(n)]
+    x[n-1] = b[n-1]/A[n-1][n-1]
+    for i in range(n-2,-1,-1):
+        for k in range(i+1,n):
+            x[i] = (b[i] - A[i][k]*b[k])/A[i][i]'''
 
-
-print(Gauss(RandSqMat(3,4),[1,1,1]))
+    return(A,x)
