@@ -1,15 +1,6 @@
 import numpy as np
 import Matrix
 
-def luDecomp(A):
-    n=len(A)
-    for i in range(0,n-1):
-        for j in range(i+1,n):
-            factor = A[j][i]/A[i][i]
-            A[j][i+1:n] = A[j][i+1:n] - factor * A[i][i+1:n]
-            A[j][i] = factor
-    return A
-
 def lu(A):
     n=len(A)
     L=[]
@@ -40,16 +31,63 @@ def hilbertMatrix(n):
 
 def forwardSub(L,b):
     sol = []
-    for i in range(len(b)):
+    n=len(L)
+    for i in range(n):
         sol.append(b[i])
         for j in range(i):
-            sol[i]=sol[i]-L[i,j]*sol[j]
-        x[i] = x[i]/L[i,i]
+            sol[i]=sol[i]-L[i][j]*sol[j]
+        sol[i] = sol[i]/L[i][i]
+    return sol
+
+def scaledPartialPivot(A,b):
+    n=len(A)
+    s = []
+    for i in range(n):
+        s.append(np.abs(A[i][0]))
+        for j in range(n):
+            temp1=np.abs(A[i][j])
+            if temp1>s[i]:
+                s[i]=temp1
+    for k in range(n-1):
+        temp1=np.abs(A[k][k]/s[k]);
+        q=k
+        for i in range(k+1,n):
+            temp2 = np.abs(A[i][k]/s[k])
+            if temp2 > temp1:
+                temp1=temp2
+                q=i
+    for j in range(n):
+        temp1=A[q][j]
+        A[q][j] = A[k][j]
+        A[k][j] = temp1
+    temp1 = b[q]
+    b[q] = b[k]
+    b[k] = temp1
+    temp1 = s[q]
+    s[q] = s[k]
+    s[k] = temp1
+    for k in range(n):
+        for i in range(k+1,n):
+            factor=A[i][k]/A[k][k]
+            for j in range(n):
+                A[i][j]=A[i][j]-factor*A[k][j]
+                b[i] -= factor*b[k]
+    return(A)
+
+def matVecMult(A,b):
+    n=len(b)
+    x = [0 for i in range(n)]
+    sum=0
+    for j in range(n):
+        for i in range(n):
+            sum += A[j][i]*b[i]
+        x[j]=sum
+        sum=0
     return x
 
-#print(lu(Matrix.RandSqMat(3)))
-print(Matrix.gauss([[3,-2,1],[1,-3,2],[-1,2,4]],[1,2,4]))
-#print(Matrix.gauss([[-4,2,1],[1,6,2],[1,-2,5]],[1,2,5]))
-#print(Matrix.gauss([[1,2,4],[2,4,8],[4,8,16]],[1,1,1]))
-#print(Matrix.RandSqMat(3))
+#print(matVecMult(hilbertMatrix(3),[1,1,1]))
 
+for j in range(4,11):
+    b = matVecMult(hilbertMatrix(j),[1 for i in range(j)])
+    print("Solution for", j, "by", j, "is:")
+    print(forwardSub(scaledPartialPivot(hilbertMatrix(j),b),b))
