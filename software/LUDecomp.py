@@ -87,7 +87,7 @@ def matVecMult(A,b):
 
 #print(matVecMult(hilbertMatrix(3),[1,1,1]))
 
-for j in range(4,11):
-    b = matVecMult(hilbertMatrix(j),[1 for i in range(j)])
-    print("Solution for", j, "by", j, "is:")
-    print(forwardSub(scaledPartialPivot(hilbertMatrix(j),b),b))
+#for j in range(3,11):
+#    b = matVecMult(hilbertMatrix(j),[1 for i in range(j)])
+#    print("Solution for", j, "by", j, "is:")
+#    print(forwardSub(scaledPartialPivot(hilbertMatrix(j),b),b))
