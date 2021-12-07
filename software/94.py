@@ -24,10 +24,8 @@ def jacobi(A,b,tol,maxiter):
     error = 10 * tol
     iter = 0
     r = [1 for i in range(n)]
-    x1 = r
-#    x = [1 for i in range(n)]
-#    x = [1,1,1]
-    x=r
+    x1 = [1 for i in range(n)]
+    x = [1 for i in range(n)]
     while error > tol and iter < maxiter:
         for i in range(n):
             r[i] = b[i]
@@ -54,5 +52,3 @@ def bigBoy():
     err = Task92.l2Err(jacobi(A,b,.01,100),[1 for i in range(len(A))])
     print(err)
 #bigBoy()
-
-print([1 for i in range(3)] == [1,1,1])
