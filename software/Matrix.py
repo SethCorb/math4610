@@ -1,6 +1,21 @@
 import numpy as np
 import random
 
+def randDomMat(n):
+    A = [[] for i in range(n)]
+    sum = [0 for i in range(n)]
+    for i in A:
+        for j in range(n):
+            i.append([])
+    for i in range(n):
+        for j in range(n):
+            A[i][j] = random.randint(1,5)
+    for i in range(n):
+        for j in range(n):
+            sum[i] += A[i][j]
+        A[i][i] = sum[i]+1
+    return A
+
 def defMat(n):
     A = []
     b = []
@@ -102,3 +117,5 @@ def gauss(A,b):
             factor -= A[i][j] * x[j] if i != j else 0
         x[i] = factor / A[i][i]
     return(A,x)
+
+print(gauss(randDiagMat(3),[1,1,1]))
