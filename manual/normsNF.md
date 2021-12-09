@@ -1,44 +1,156 @@
-Routine Name: bisection
+Routine Name: l2norm
 
 Author: Seth Corbridge
 
 Language: Python
 
-Link to file: [link](https://github.com/SethCorb/math4610/blob/681c0ae37bf779e3682a5e1a084587d9c3a1a98c/software/Bisection.py)
+Link to file: [link](https://github.com/SethCorb/math4610/blob/952fb981c136355401c3f7b99ae3217904b160eb/software/Task92.py)
 
-Purpose: This routine attempts to find a root 
+Purpose: This routine finds the l-2 norm. 
 
-Input: You must input a lower and upper bound, tolerance and maximum iterations.
+Input: You must input a vector.
 
-Output: This routine returns a root, if possible.
+Output: This routine returns the l-2 norm.
 
 Code:
 ```
-import numpy as  np
-def f(x):
-    return eval("x * np.exp( 3 * x ** 2)- 7 * x", {'x': x, 'np': np})
-c define your function
-def bisection(a,b,tol,maxiter):
-    fa = f(a)
-c find f(a)
-    error = 10 * tol
-c define error to run through the loop at least once.
-    iter = 0
-c start iteration count at 0.
-    while error > tol and iter < maxiter:
-c define your loop so it will continue until conditions are satisfied
-        c = (a+b)/2
-c define c as your midpoint of a, b
-        fc = f(c)
-c find f(c)
-        if fa * fc < 0:
-            b = c
-        else:
-            a = c
-c change a or b to be c to tighten your interval
-        iter = iter + 1
-        error = np.abs(b-a)
-c find your error and iteration
-    return c
+def l2norm(x):
+    n=len(x)
+    doubleSum = 0
+    for i in range(n):
+        doubleSum +=x[i] *x[i]
+    return np.sqrt(doubleSum)
 ```
-Last modified 9/2021
+Last modified 12/2021
+
+---
+
+Routine Name: l1norm
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/952fb981c136355401c3f7b99ae3217904b160eb/software/Task92.py)
+
+Purpose: This routine finds the l-1 norm.
+
+Input: You must input a vector.
+
+Output: This routine the l-1 norm.
+
+Code:
+```
+def l1norm(x):
+    n=len(x)
+    sum=0
+    for i in range(n):
+        sum+= np.abs(x[i])
+    return(sum)
+```
+Last modified 12/2021
+
+---
+
+Routine Name: linfnorm
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/952fb981c136355401c3f7b99ae3217904b160eb/software/Task92.py)
+
+Purpose: This routine finds the l-inf norm.
+
+Input: You must input a vector.
+
+Output: This routine returns the l-inf norm.
+
+Code:
+```
+def lInfNorm(x):
+    return max(x)
+```
+Last modified 12/2021
+
+---
+
+Routine Name: l2Err
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/952fb981c136355401c3f7b99ae3217904b160eb/software/Task92.py)
+
+Purpose: This routine finds the l-2 error 
+
+Input: You must input two vectors.
+
+Output: This routine returns the l-2 error.
+
+Code:
+```
+def l2Err(x,y):
+    n=len(x)
+    sum=0
+    for i in range(n):
+        diff = x[i]-y[i]
+        sum+= diff * diff
+    return np.sqrt(sum)
+```
+Last modified 12/2021
+
+---
+
+Routine Name: l1Err
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/952fb981c136355401c3f7b99ae3217904b160eb/software/Task92.py)
+
+Purpose: This routine returns the l-1 error 
+
+Input: You must input two vectors.
+
+Output: This routine returns the l-1 error.
+
+Code:
+```
+def l1Err(x,y):
+    n=len(x)
+    sum = 0
+    for i in range(n):
+        diff = x[i] - y[i]
+        sum+= np.abs(diff)
+    return sum
+```
+Last modified 12/2021
+
+---
+
+Routine Name: linfErr
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/952fb981c136355401c3f7b99ae3217904b160eb/software/Task92.py)
+
+Purpose: This routine finds the l-inf error 
+
+Input: You must input two vectors.
+
+Output: This routine returns the l-inf error..
+
+Code:
+```
+def lInfErr(x,y):
+    z=[]
+    for i in range(len(x)):
+        z.append(np.abs(x[i]-y[i]))
+    return max(z)
+```
+Last modified 12/2021
