@@ -1,44 +1,146 @@
-Routine Name: bisection
+Routine Name: matrix_addition
 
 Author: Seth Corbridge
 
 Language: Python
 
-Link to file: [link](https://github.com/SethCorb/math4610/blob/681c0ae37bf779e3682a5e1a084587d9c3a1a98c/software/Bisection.py)
+Link to file: [link](https://github.com/SethCorb/math4610/blob/9682f574bf3247ed5e3c9609ecdcf4031f47aad2/software/matvecop.py)
 
-Purpose: This routine attempts to find a root 
+Purpose: This routine will give you the sum of two matrices.
 
-Input: You must input a lower and upper bound, tolerance and maximum iterations.
+Input: You must input two matrices of the same size.
 
-Output: This routine returns a root, if possible.
+Output: This routine returns you the sum matrix.
 
 Code:
 ```
-import numpy as  np
-def f(x):
-    return eval("x * np.exp( 3 * x ** 2)- 7 * x", {'x': x, 'np': np})
-c define your function
-def bisection(a,b,tol,maxiter):
-    fa = f(a)
-c find f(a)
-    error = 10 * tol
-c define error to run through the loop at least once.
-    iter = 0
-c start iteration count at 0.
-    while error > tol and iter < maxiter:
-c define your loop so it will continue until conditions are satisfied
-        c = (a+b)/2
-c define c as your midpoint of a, b
-        fc = f(c)
-c find f(c)
-        if fa * fc < 0:
-            b = c
-        else:
-            a = c
-c change a or b to be c to tighten your interval
-        iter = iter + 1
-        error = np.abs(b-a)
-c find your error and iteration
-    return c
+def matrix_addition(m1, m2):
+    result = [[m1[i][j] + m2[i][j] for j in range(len(m1[0]))] for i in range(len(m1))]
+    return result
 ```
-Last modified 9/2021
+Last modified 12/2021
+
+---
+
+Routine Name: matrix_subtraction
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/9682f574bf3247ed5e3c9609ecdcf4031f47aad2/software/matvecop.py)
+
+Purpose: This routine will give you the difference of two matrices.
+
+Input: You must input two matrices of the same size.
+
+Output: This routine returns you the difference matrix.
+
+Code:
+```
+def matrix_subtraction(m1, m2):
+    result = [[m1[i][j] - m2[i][j] for j in range(len(m1[0]))] for i in range(len(m1))]
+    return result
+```
+Last modified 12/2021
+
+---
+
+Routine Name: matrix_scalar_multiplication
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/9682f574bf3247ed5e3c9609ecdcf4031f47aad2/software/matvecop.py)
+
+Purpose: This routine will give you the scalaar multiple of a matrix.
+
+Input: You must input one matrix and a scalar.
+
+Output: This routine returns you the scaled matrix.
+
+Code:
+```
+def matrix_scaler_multiplication(c, m1):
+    result = [[m1[i][j] * c for j in range(len(m1[0]))] for i in range(len(m1))]
+    return result
+```
+Last modified 12/2021
+
+---
+
+Routine Name: matrix_transpose
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/9682f574bf3247ed5e3c9609ecdcf4031f47aad2/software/matvecop.py)
+
+Purpose: This routine will give you the transpose of a matrix.
+
+Input: You must input one matrix.
+
+Output: This routine returns you transpose of the matrix.
+
+Code:
+```
+def matrix_transpose(m):
+    result = [[m[j][i] for j in range(len(m))] for i in range(len(m[0]))]
+    return result
+```
+Last modified 12/2021
+
+---
+
+Routine Name: matrix_vector_multiplication
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/9682f574bf3247ed5e3c9609ecdcf4031f47aad2/software/matvecop.py)
+
+Purpose: This routine will give you the product of a matrix and a vector.
+
+Input: You must input a matrix and a vector.
+
+Output: This routine returns you the product vector .
+
+Code:
+```
+def matrix_vector_multiplication(m, v):
+    return [np.dot(row, v) for row in m]
+```
+Last modified 12/2021
+
+---
+
+Routine Name: matrix_multiplication
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/9682f574bf3247ed5e3c9609ecdcf4031f47aad2/software/matvecop.py)
+
+Purpose: This routine will give you the product of two matrices.
+
+Input: You must input two matrices of compatible sizes.
+
+Output: This routine returns you the product matrix.
+
+Code:
+```
+def matrix_multiplication(m1, m2):
+    result = np.eye(len(m1), dtype=np.double)
+    for i in range(len(m1)):
+        for j in range(len(m2[0])):
+            for k in range(len(m2)):
+                result[i, j] += m1[i][k] * m2[k][j]
+    return result
+```
+Last modified 12/2021
+
+---
