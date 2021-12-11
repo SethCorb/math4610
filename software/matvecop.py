@@ -14,7 +14,7 @@ def vector_subtraction(v1, v2):
         x[i] = v1[i] - v2[i]
     return x
 
-def scaler_mult(c, v1):
+def scalar_mult(c, v1):
     n = len(v1)
     x = [0 for j in range(n)]
     for i in range(n):
