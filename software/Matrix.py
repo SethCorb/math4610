@@ -118,4 +118,4 @@ def gauss(A,b):
         x[i] = factor / A[i][i]
     return(A,x)
 
-print(gauss(randDiagMat(3),[1,1,1]))
+#print(gauss(randDiagMat(3),[1,1,1]))
