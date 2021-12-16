@@ -4,41 +4,49 @@ Author: Seth Corbridge
 
 Language: Python
 
-Link to file: [link](https://github.com/SethCorb/math4610/blob/681c0ae37bf779e3682a5e1a084587d9c3a1a98c/software/Bisection.py)
+Link to file: [link](https://github.com/SethCorb/math4610/blob/8b40911bc14e1a378849802ab5b3bc9fb9e13a24/software/LUDecomp.py)
 
-Purpose: This routine attempts to find a root 
+Purpose: This uses sclaed partial pivoting to reduce a matrix A 
 
-Input: You must input a lower and upper bound, tolerance and maximum iterations.
+Input: You must input a matrix and a vector.
 
-Output: This routine returns a root, if possible.
+Output: This routine returns a reduced matrix.
 
 Code:
 ```
-import numpy as  np
-def f(x):
-    return eval("x * np.exp( 3 * x ** 2)- 7 * x", {'x': x, 'np': np})
-c define your function
-def bisection(a,b,tol,maxiter):
-    fa = f(a)
-c find f(a)
-    error = 10 * tol
-c define error to run through the loop at least once.
-    iter = 0
-c start iteration count at 0.
-    while error > tol and iter < maxiter:
-c define your loop so it will continue until conditions are satisfied
-        c = (a+b)/2
-c define c as your midpoint of a, b
-        fc = f(c)
-c find f(c)
-        if fa * fc < 0:
-            b = c
-        else:
-            a = c
-c change a or b to be c to tighten your interval
-        iter = iter + 1
-        error = np.abs(b-a)
-c find your error and iteration
-    return c
+def scaledPartialPivot(A,b):
+    n=len(A)
+    s = []
+    for i in range(n):
+        s.append(np.abs(A[i][0]))
+        for j in range(n):
+            temp1=np.abs(A[i][j])
+            if temp1>s[i]:
+                s[i]=temp1
+    for k in range(n-1):
+        temp1=np.abs(A[k][k]/s[k]);
+        q=k
+        for i in range(k+1,n):
+            temp2 = np.abs(A[i][k]/s[k])
+            if temp2 > temp1:
+                temp1=temp2
+                q=i
+    for j in range(n):
+        temp1=A[q][j]
+        A[q][j] = A[k][j]
+        A[k][j] = temp1
+    temp1 = b[q]
+    b[q] = b[k]
+    b[k] = temp1
+    temp1 = s[q]
+    s[q] = s[k]
+    s[k] = temp1
+    for k in range(n):
+        for i in range(k+1,n):
+            factor=A[i][k]/A[k][k]
+            for j in range(n):
+                A[i][j]=A[i][j]-factor*A[k][j]
+                b[i] -= factor*b[k]
+    return(A)
 ```
-Last modified 9/2021
+Last modified 12/2021
