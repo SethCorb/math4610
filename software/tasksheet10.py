@@ -2,6 +2,25 @@ import numpy as np
 import matvecop as mv
 import Matrix as mat
 import copy
+import random
+
+def diagDomSym(n):
+    A = [[] for i in range(n)]
+    #for i in A:
+     #   for j in range(n):
+      #      i.append([])
+    for i in range(n):
+        for j in range(i):
+            A[i].append(random.randint(1,5))
+            A[j].append(random.randint(1,5))
+    for i in range(n-1):
+        sum = 0
+        for j in range(n-1):
+            sum += A[i][j]
+        A[i][i] = sum+1
+    for i in range(n):
+        A[i].append(1)
+    return A
 
 def powerMethod(A,tolerance=.01,maxiter=1000):
     oldLam=1
@@ -33,6 +52,5 @@ def invPowerMethod(A,tolerance=.01,maxiter=1000):
         iter+=1
         oldLam = newLam
         y = copy.deepcopy(v)
-        print(newLam)
     return newLam
-print(invPowerMethod([[1,2],[2,1]]))
+
