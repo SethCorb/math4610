@@ -31,4 +31,4 @@ dz.insert(0,"D-zero")
 dt.insert(0,"D-three")
 # Define and display our table.
 table = [h, dp, dm, dz, dt]
-print(tabulate(table))
+print(tabulate(table,tablefmt= "fancy_grid"))
