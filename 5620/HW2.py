@@ -17,8 +17,7 @@ F[10]=1
 for i in range(1,10):
     F[i] = np.sin(i*.1)
 sol = linalg.solve(A,F)
-x = [i*.1 for i in range(1,12)]
-
+x = [(i-1)*.1 for i in range(1,12)]
 plt.plot(x,linalg.solve(A,F))
 plt.show()
 real = "-np.sin(x)+2*x-.1585"
@@ -29,8 +28,8 @@ for i in range(11):
 sum = 0
 for i in rl:
     sum += i**2
-newsum = np.sqrt(sum)
-x = [i*.1 for i in range(1,12)]
+newsum = np.sqrt(sum*.1)
+x = [(i-1)*.1 for i in range(1,12)]
 print("2-norm:", newsum)
 plt.plot(x,rl)
 plt.show()
