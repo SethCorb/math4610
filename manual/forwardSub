@@ -1,0 +1,27 @@
+Routine Name: forwardSub
+
+Author: Seth Corbridge
+
+Language: Python
+
+Link to file: [link](https://github.com/SethCorb/math4610/blob/8b40911bc14e1a378849802ab5b3bc9fb9e13a24/software/LUDecomp.py)
+
+Purpose: This uses forward substitution to solve a lower matrix and a vector.
+
+Input: You must input a lower matrix and a vector.
+
+Output: This routine returns the solution.
+
+Code:
+```
+def forwardSub(L,b):
+    sol = []
+    n=len(L)
+    for i in range(n):
+        sol.append(b[i])
+        for j in range(i):
+            sol[i]=sol[i]-L[i][j]*sol[j]
+        sol[i] = sol[i]/L[i][i]
+    return sol
+```
+Last modified 12/2021
