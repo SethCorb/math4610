@@ -4,11 +4,6 @@ import matplotlib.pyplot as plt
 A = np.zeros((11,11))
 A[0][0]=-.1
 A[0][1]=.1
-unifgrid = []
-m = 49
-for i in range(m+1):
-    unifgrid.append(1/(m+1)*i)
-print(unifgrid)
 for i in range(9):
     A[i+1][i]=1
     A[i+1][i+1]=-2
