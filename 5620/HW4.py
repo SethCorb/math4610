@@ -38,14 +38,14 @@ def parta():
 def Q2():
     f = "(t+1)*u"
     un = 1
-    t = 0
+    t = .05
     U = []
     U.append(1)
     u = un
     U.append(un+.05*eval(f))
     for i in range(1,20):
         u = U[i]
-        t = (i+2) * .05
+        t = (i) * .05
         U.append(U[i-1]+.1*eval(f))
     print(U)
     xlist = []
